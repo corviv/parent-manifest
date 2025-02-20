@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote 
+    name="github" 
+    fetch="https://github.com" 
+  />
+  
+  <submanifest 
+    name="child"
+    remote="github"
+    project="corviv/child-manifest"
+    manifest-name="child.xml"
+    revision="main"
+    groups="group1"
+  />
+</manifest>
