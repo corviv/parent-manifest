@@ -4,6 +4,11 @@
     name="github" 
     fetch="https://github.com" 
   />
+
+  <default 
+    groups="all,-notdefault,group1"  
+    sync-j="4"
+  />
   
   <submanifest 
     name="child"
@@ -12,7 +17,7 @@
     manifest-name="child.xml"
     revision="main"
     groups="group1"
-    default-groups="group1"
+    default-groups=""
     path="vendor/smart-hub"
   />
 </manifest>
