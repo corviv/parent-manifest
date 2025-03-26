@@ -5,10 +5,17 @@
     fetch="https://github.com" 
   />
 
-  <default 
-    groups="all,-notdefault,group1"  
-    sync-j="4"
-  />
+  <default groups="
+    all,
+    -notdefault,
+    -default,
+    -submanifest::path:vendor/smart-hub,
+    -name:corviv/test-project,
+    -path:group1,
+    -path:group2,
+    -path:.,
+    group1
+  "/>
   
   <submanifest 
     name="child"
@@ -17,7 +24,6 @@
     manifest-name="child.xml"
     revision="main"
     groups="group1"
-    default-groups=""
     path="vendor/smart-hub"
   />
 </manifest>
