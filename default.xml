@@ -11,7 +11,7 @@
     project="corviv/child-manifest"
     manifest-name="child.xml"
     revision="main"
-    default-groups="group1"
+    default-groups="common"
     path="vendor/smart-hub"
   />
 </manifest>
